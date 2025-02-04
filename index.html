@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            color: #ffffff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(10, 10, 10, 0.95);
+            padding: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+            text-transform: uppercase;
+            color: #ffd700;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(20, 20, 20, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, background 0.3s;
+            margin-bottom: 20px;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(30, 30, 30, 1);
+        }
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        }
+        h2 {
+            color: #ffd700;
+            font-size: 26px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: rgba(40, 40, 40, 0.8);
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        ul li:hover {
+            background: rgba(60, 60, 60, 1);
+        }
+        a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ffdf33;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 95%;
+                padding: 20px;
+            }
+            header {
+                font-size: 28px;
+            }
+            .profile-pic {
+                width: 140px;
+                height: 140px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        My Portfolio
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Personal Information</h2>
+            <img src="pfp.jpg" alt="Profile Picture" class="profile-pic">
+            <p><strong>Name:</strong> Pratik Kailas Shedge</p>
+            <p><strong>Email:</strong> shedgepratik999@gmail.com</p>
+            <p><strong>Location:</strong> Pimpri Chinchwad, Pune</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pratik-shedge-995037293/" target="_blank">Pratik's LinkedIn</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Pratik-shedge07" target="_blank">Pratik's GitHub</a></p>
+        </div>
+        
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Hello! I am a Student Currently Pursuing a Bachelor's in Computer Science at Dr. DY Patil College, Akurdi.</p>
+            <p>I am a passionate web developer with experience in building responsive and dynamic websites. I am eager to learn more about the field and contribute to the community.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Angular</li>
+                <li>Spring Boot</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
