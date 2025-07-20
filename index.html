@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Pratik Kailas Shedge - Frontend Developer Portfolio"/>
   <meta name="author" content="Pratik Shedge" />
+  <meta property="og:title" content="Pratik Shedge | Frontend Developer" />
+  <meta property="og:description" content="Portfolio of Pratik Shedge - Frontend Developer & Java Enthusiast" />
+  <meta property="og:image" content="pfp.jpg" />
+  <meta property="og:url" content="https://patricxsportfolio.netlify.app" />
   <title>Pratik Shedge | Frontend Developer</title>
 
   <!-- Google Fonts -->
@@ -43,12 +47,27 @@
       z-index: 999;
     }
 
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ffd700;
+      color: #000;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: none;
+      z-index: 1000;
+    }
+
     .hero {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 50px 20px 30px;
+      padding: 60px 20px 40px;
       text-align: center;
     }
 
@@ -116,7 +135,7 @@
       background: rgba(80, 80, 80, 0.9);
     }
 
-    .links a {
+    .links a, .btn-link {
       display: inline-block;
       margin: 10px 10px 0;
       padding: 10px 16px;
@@ -128,7 +147,7 @@
       transition: 0.3s ease;
     }
 
-    .links a:hover {
+    .links a:hover, .btn-link:hover {
       background: #ffd700;
       color: #000;
     }
@@ -144,65 +163,82 @@
   </style>
 </head>
 <body>
-
   <header>Pratik Shedge</header>
 
+  <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <section class="hero">
-    <img src="pfp.jpg" alt="Profile Picture" onerror="this.src='https://via.placeholder.com/150x150?text=No+Image';"/>
-    <h1>Frontend Developer & Tech Explorer</h1>
-    <p>Passionate about crafting clean and responsive UIs. Currently building a smart DSA Tracker and learning full-stack development to become unstoppable!</p>
+    <img src="pfp.jpg" alt="Profile Picture of Pratik Shedge" onerror="this.src='https://via.placeholder.com/150x150?text=No+Image';"/>
+    <h1>Frontend Developer | Java Enthusiast</h1>
+    <p>Building responsive web apps that solve real user problems. Currently focused on DSA Tracker & Full-Stack mastery.</p>
   </section>
 
   <section class="section">
     <h2><i class="fa-solid fa-user"></i> About Me</h2>
-    <p>I’m a Computer Science student at Dr. DY Patil College, Akurdi, and a self-taught frontend developer who’s diving deep into React, backend development, and building meaningful tools like the DSA Master Tracker.</p>
+    <p>I’m a Computer Science student at Dr. DY Patil College, Akurdi, and a self-taught frontend developer focused on React, backend development, and building impactful tools like the DSA Master Tracker.</p>
   </section>
 
   <section class="section">
     <h2><i class="fa-solid fa-code"></i> Skills</h2>
     <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>React.js & Styled-Components</li>
-      <li>MongoDB & MySQL</li>
-      <li>Spring Boot</li>
-      <li>Git & GitHub</li>
+      <li>HTML5, CSS3, JavaScript (ES6+)</li>
+      <li>React.js, Styled-Components</li>
+      <li>Java, Spring Boot, REST API</li>
+      <li>MySQL, MongoDB</li>
+      <li>Git, GitHub, Netlify, Postman</li>
     </ul>
   </section>
 
- <section class="section">
-  <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
-  <div style="display: flex; flex-direction: column; gap: 20px;">
+  <section class="section">
+    <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
+    <div style="display: flex; flex-direction: column; gap: 20px;">
 
-    <div>
-      <strong>DSA Master Tracker</strong><br />
-      Smart dashboard to track DSA progress with filters, streaks, analytics, CSV export, and more.
-      <br />
-      <a href="https://github.com/Pratik-shedge07/DSA-Master-Tracker" class="btn-link" target="_blank">
-        <i class="fab fa-github"></i> GitHub Repo
-      </a>
+      <div>
+        <strong>DSA Master Tracker</strong><br />
+        Smart React dashboard for DSA prep with filters, streak tracking, analytics & export. Tech: React.js, Java, REST API.
+        <br />
+        <a href="https://github.com/Pratik-shedge07/DSA-Master-Tracker" class="btn-link" target="_blank">
+          <i class="fab fa-github"></i> GitHub Repo
+        </a>
+      </div>
+
+      <div>
+        <strong>Dairy Clouds</strong><br />
+        Role-based dairy management app to manage milk logs and earnings. Built using React.js, Java (Spring Boot), MySQL.
+        <br />
+        <a href="https://github.com/Pratik-shedge07/Dairy-Clouds" class="btn-link" target="_blank">
+          <i class="fab fa-github"></i> GitHub Repo
+        </a>
+      </div>
+
+      <div>
+        <strong>Product Advisor</strong><br />
+        A budgeting tool to check if a product is worth buying based on salary, usage, and price.
+        <br />
+        <a href="https://github.com/Pratik-shedge07" class="btn-link" target="_blank">
+          <i class="fab fa-github"></i> GitHub Repo
+        </a>
+      </div>
+
     </div>
+  </section>
 
-    <div>
-      <strong>Dairy Clouds</strong><br />
-      Dairy management system to track milk inventory and earnings.
-      <br />
-      <a href="https://github.com/Pratik-shedge07/Dairy-Clouds" class="btn-link" target="_blank">
-        <i class="fab fa-github"></i> GitHub Repo
-      </a>
-    </div>
+  <section class="section">
+    <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+    <p>
+      Email: <a href="mailto:shedgepratik999@gmail.com" class="btn-link">shedgepratik999@gmail.com</a><br/>
+      LinkedIn: <a href="https://linkedin.com/in/pratik-shedge07" class="btn-link" target="_blank">@pratik-shedge07</a><br/>
+      GitHub: <a href="https://github.com/Pratik-shedge07" class="btn-link" target="_blank">@Pratik-shedge07</a>
+    </p>
+  </section>
 
-    <div>
-      <strong>Product Advisor</strong><br />
-      Frontend app that helps users compare and explore product suggestions.
-      <br />
-      <a href="https://github.com/Pratik-shedge07" class="btn-link" target="_blank">
-        <i class="fab fa-github"></i> GitHub Repo
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
+  <script>
+    // Show scroll-to-top button
+    window.onscroll = () => {
+      document.querySelector('.scroll-top').style.display = window.scrollY > 300 ? 'block' : 'none';
+    };
+  </script>
 </body>
 </html>
